@@ -1,5 +1,6 @@
 ---
 # Index
+title: Staff Appraisal
 ---
 <!DOCTYPE html>
 <html>
@@ -7,43 +8,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-    <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/snake.css" | relative_url }}">
   </head>
 <body>
-    <div class="container">
-        <section class="section">
-            <h1 class="name">
-                {% if site.name %}
-                    {{ site.name }}
-                {% endif %}
-                {% if site.description %}
-                    {{ site.description }}
-                {% endif %}
-            </h1>
+    <section class="section">
+        <h1 class="name">
+            {% if site.name %}
+                {{ site.name }}
+            {% endif %}
+        </h1>
+        <h3 class="description">
+            {% if site.description %}
+                {{ site.description }}
+            {% endif %}
+        </h3>
 
-            <div class="buttons">
+        <a class="btn10" href="https://docs.google.com/forms/d/e/1FAIpQLSfimzzqYmi315SN71bl756AVwJZLilhqT4dQhSYFwv5QpvbiA/viewform?usp=sf_link">
+            <span></span> <span></span> <span></span> <span></span>
+            Staff Appraisal
+        </a>
+    </section>
+    <div>
 
-                {% if site.google_plus_username %}
-                    <a class="button google" href="https://docs.google.com/forms/d/e/1FAIpQLSfimzzqYmi315SN71bl756AVwJZLilhqT4dQhSYFwv5QpvbiA/viewform?usp=sf_link" target="_blank"><i class="fab fa-google"></i></a>
-                {% endif %}
-
-            </div>
-        </section>
-    </div>
-
-    {% if site.unsplash_client_id %}
-        <script>
-            var client_id = '{{ site.unsplash_client_id }}';
-            fetch('https://api.unsplash.com/photos/random?client_id=' + client_id)
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(json) {
-                    document.body.style.backgroundImage = 'url(' + json.urls.regular + ')';
-                })
-                .catch(function() {});
-        </script>
-    {% endif %}
 </body>
 </html>
+
+
