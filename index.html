@@ -11,24 +11,30 @@ title: Staff Appraisal
     <link rel="stylesheet" href="{{ "/assets/snake.css" | relative_url }}">
   </head>
 <body>
-    <section class="section">
-        <h1 class="name">
-            {% if site.name %}
-                {{ site.name }}
-            {% endif %}
-        </h1>
-        <h3 class="description">
-            {% if site.description %}
-                {{ site.description }}
-            {% endif %}
-        </h3>
 
-        <a class="btn10" href="https://docs.google.com/forms/d/e/1FAIpQLSfimzzqYmi315SN71bl756AVwJZLilhqT4dQhSYFwv5QpvbiA/viewform?usp=sf_link">
-            <span></span> <span></span> <span></span> <span></span>
-            Staff Appraisal
-        </a>
-    </section>
-    <div>
+    <div class="container">
+        <section class="section">
+            <h1 class="name">
+                {% if site.name %}
+                    {{ site.name }}
+                {% endif %}
+            </h1>
+            <h3 class="description">
+                {% if site.description %}
+                    {{ site.description }}
+                {% endif %}
+            </h3>
+
+            <div class="buttons">
+
+                <a class="btn1" href={{ site.staff-appraisal }}>
+                    <span></span> <span></span> <span></span> <span></span>
+                    Staff Appraisal
+                </a>
+
+            </div>
+        </section>
+    </div>
 
 </body>
 </html>
