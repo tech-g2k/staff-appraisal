@@ -1,6 +1,3 @@
-# Jekyll - Theme - Ichi
+# Gateway 2 Khmer
 
-## Original source
-
-Please go here to get the original source: https://github.com/ntuanb/jekyll-theme-ichi. 
-
+## Staff Appraisal
